@@ -347,10 +347,10 @@ p{
     transition: all 0.5s ease;
 }
 .join-us-item:hover::before{
-    transform: scale(-2,0);
+    transform: scale(-1,0);
 }
 .join-us-item:hover::after{
-    transform: scale(0,-2);
+    transform: scale(0,-1);
 }
 .join-us-item:nth-child(1){
     background-color: var(--color-1);
@@ -376,4 +376,59 @@ p{
     font-weight: 500;
     text-transform: capitalize;
     margin: 0 0 10px;
+}
+/* courses section*/
+.courses-section{
+    background-color: var(--dark-800);
+    padding-bottom: 50px;
+}
+.course-item{
+    width: calc(25% - 30px);
+    margin: 0 15px 30px;
+}
+.course-img{
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative; 
+    transition: all 0.5s ease;
+}
+.course-item:hover .course-img{
+    transform: scale(1.2);
+    box-shadow: var(--shadow);
+}
+.course-img img{
+    width: 100%;
+}
+.course-img .course-watch{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--dark-700);
+    color: var(--main-color);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+.course-info{
+    padding: 15px 0;
+}
+.course-info ul{
+    display: flex;
+    justify-content: space-between;
+}
+.course-info ul li{
+    color: var(--white-800);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+.course-info ul .fa-star{
+    color: var(--color-1);
+}
+.course-info h3{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--white-900);
+    margin: 10px 0 0;
 }
